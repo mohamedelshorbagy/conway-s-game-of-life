@@ -103,7 +103,21 @@ grid = nextState;
 
 }
 
+
+
 // Global Functions 
+
+
+
+/*
+  [ Function Name ] : createTwoDArray(cols,rows)
+  [ Function Returned Value Type ] : Array
+  [ Inherited Function or Classes ] : - Built In
+                              = Array Class 
+  [ Functionality ] : Make a 2D Array for the Grid System
+
+*/
+
 function createTwoDArray(cols,rows) {
 
 let temp = new Array(cols);
@@ -115,6 +129,20 @@ for(let i = 0;i < temp.length;i++) {
 return temp;
 
 }
+
+/*
+  [ Function Name ] : checkNeighbours(grid , x , y)
+  [ Function Returned Value Type ] : Number ( Float or Integer )
+  [ Inherited Function or Classes ] : - Built In
+                                          = Array Class 
+                                      - Techniques :
+                                        = Infinite World Wrapper
+                                        = Modulo Operator Technique   
+  [ Functionality ] : To check the Neighbours Values to Make the Rules Referenced at the Beginning
+
+*/
+
+
 
 function checkNeighbours(grid , x , y) {
   let sum = 0;
